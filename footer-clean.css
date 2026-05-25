@@ -1,0 +1,43 @@
+/* Footer limpio y sencillo */
+.footer {
+  padding: 22px 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "footer-empty footer-copy footer-socials";
+  align-items: center;
+  gap: 18px;
+}
+
+.footer p {
+  grid-area: footer-copy;
+  justify-self: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.socials {
+  grid-area: footer-socials;
+  justify-self: end;
+}
+
+@media (max-width: 760px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "footer-socials"
+      "footer-copy";
+    justify-items: center;
+  }
+
+  .socials,
+  .footer p {
+    justify-self: center;
+  }
+
+  .footer p {
+    white-space: normal;
+  }
+}

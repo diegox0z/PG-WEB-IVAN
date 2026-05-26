@@ -1,0 +1,35 @@
+/* Ajuste final del H1 del hero en móvil */
+@media (max-width: 760px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero__content {
+    padding-block: 44px 42px;
+  }
+
+  .hero h1 {
+    max-width: 300px;
+    font-size: clamp(1.7rem, 8.6vw, 2.45rem);
+    line-height: .98;
+    letter-spacing: 0;
+  }
+
+  .hero h2 {
+    max-width: 310px;
+    font-size: clamp(1rem, 5.1vw, 1.35rem);
+  }
+}
+
+@media (max-width: 390px) {
+  .hero h1 {
+    max-width: 260px;
+    font-size: clamp(1.55rem, 8.5vw, 2.05rem);
+    line-height: 1;
+  }
+
+  .hero h2 {
+    max-width: 270px;
+    font-size: clamp(.9rem, 5vw, 1.12rem);
+  }
+}

@@ -243,7 +243,7 @@ textarea {
   }
 
   .hero {
-    min-height: 560px;
+    min-height: 520px;
     padding-top: 68px;
   }
 
@@ -255,7 +255,7 @@ textarea {
   }
 
   .hero__content {
-    padding-block: 54px 52px;
+    padding-block: 48px 46px;
   }
 
   .eyebrow,
@@ -270,29 +270,33 @@ textarea {
   }
 
   .hero h1 {
-    margin-top: 18px;
-    font-size: clamp(2.35rem, 13vw, 3.45rem);
-    line-height: 1;
-    letter-spacing: .028em;
+    max-width: 330px;
+    margin-top: 16px;
+    font-size: clamp(2rem, 10vw, 2.85rem);
+    line-height: .96;
+    letter-spacing: .012em;
   }
 
   .hero h2 {
-    margin-top: 14px;
-    font-size: clamp(1.12rem, 7vw, 1.75rem);
-    line-height: 1.12;
-    letter-spacing: .02em;
+    max-width: 340px;
+    margin-top: 12px;
+    font-size: clamp(1.05rem, 5.6vw, 1.48rem);
+    line-height: 1.1;
+    letter-spacing: .01em;
   }
 
   .hero__text {
-    margin-top: 18px;
-    font-size: 1.04rem;
+    max-width: 340px;
+    margin-top: 16px;
+    font-size: 1rem;
   }
 
   .hero__actions {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
-    margin-top: 26px;
+    margin-top: 24px;
+    max-width: 340px;
   }
 
   .hero__actions .btn,
@@ -479,11 +483,20 @@ textarea {
   }
 
   .hero h1 {
-    font-size: clamp(2.05rem, 12.5vw, 2.75rem);
+    max-width: 285px;
+    font-size: clamp(1.75rem, 9.4vw, 2.3rem);
+    line-height: .98;
+    letter-spacing: 0;
   }
 
   .hero h2 {
-    font-size: clamp(1rem, 6.4vw, 1.42rem);
+    max-width: 290px;
+    font-size: clamp(.96rem, 5.4vw, 1.24rem);
+  }
+
+  .hero__text,
+  .hero__actions {
+    max-width: 300px;
   }
 
   .card {
